@@ -1,0 +1,63 @@
+body{
+	user-select: none;
+}
+
+.wrapper{
+	width: 390px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+.wrapper .box{
+	float: right;
+	width: 120px;
+	height: 120px;
+	background-color: purple;
+	padding: 5px;
+	margin: 5px;
+	color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 110px;
+    font-family: sans-serif;
+    cursor: pointer;
+    animation-duration: .2s;
+    animation-direction: alternate;
+    animation-iteration-count: 8;
+}
+
+.winner-el{
+	font-size: 30px;
+}
+
+@keyframes winnerBox {
+	from {
+		background-color: purple;
+	}
+
+	to {
+		background-color: white;
+	}
+}
+
+button.btn:focus{
+	box-shadow: none !important;
+}
+
+.alert{
+	border: none;
+	border-radius: 0px;
+    color: #055160;
+    background-color: #f5f5f5;
+    border-style: solid;
+    border-width: 0px 0px 0px 7px;
+}
+
+.alert-info {
+    border-color: #25b1cd;
+}
+
+.alert-success {
+    border-color: #26cf11;
+}
